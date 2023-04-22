@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* VARIÁVEIS */
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #2384fb;
+    --cor-de-fundo: #00030C;
+    --fonte-principal:"Inter"
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* ocupa toda a tela */
+    align-items: center;
+    text-align: center; /* alinha não só textos, mas todos os itens dentro de um elemento de bloco */
+}
+
+/* BASE DAS SEÇÕES */
+.container { /* cada seção da página ocupa uma tela inteira */
+    height: 100vh; /* 100vh = tela inteira */
+    display: grid;
+    grid-template-columns: 50% 50%; /* separa os elementos em duas colunas 50/50 */
+}
+
+.container__caixa {
+    margin: 0 7em; /* cima/baixo e dir/esq */
+    justify-content: center;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1.5em 0 3em 0; /* sentido horário: cima, direira, baixo e esquerda */
+}
+
+.container__botao {
+    text-decoration: none;
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    display: block; /* ocupa toda a sua linha */
+    margin-bottom: 1em;
+}
+
+.container__botao2 {
+    text-decoration: none;
+    color: var(--branco-principal);
+    border:  solid 2px var(--branco-principal);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    text-align: center;
+    font-size: 12px;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+    padding: 3.5em;
+}
+
+.descricao__titulo {
+    font-size: 3em;
+    color: var(--branco-principal);
+    margin-bottom: 0.25em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    line-height: 150%;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* remove o marcador de item de lista */
+    margin: 2.5em 0;
+    gap: 5em;
+}
+
+.dispositivos {
+    text-align: center;
+    margin: 9em 0;
+}
+
+.dispositivos__item {
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin-bottom: 6.18em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 0 10em;
+}
+
+.lista__link a:hover { /* modificações quando o cursor esta acima */
+    text-decoration:underline; /* adicona sublinhado quando o cursor esta em cima */
+}
+
+.lista__link a:active {
+    color: var(--cinza-secundario); /* efeito ao clicar */
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
+.container__botao2:hover {
+    background-color: #c0c0c037;
+}
