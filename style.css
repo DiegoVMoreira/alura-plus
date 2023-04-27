@@ -25,7 +25,7 @@ body {
 }
 
 .principal {
-    background-image: url("img/Background.png");
+    background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: contain; /* ocupa toda a tela */
     align-items: center;
@@ -163,4 +163,56 @@ body {
 
 .container__botao2:hover {
     background-color: #c0c0c037;
+}
+
+/* RESPONSIVIDADE MOBILE */
+
+@media screen and (max-width: 768px) {
+
+   .container {
+    display: block;
+    background-image: none;
+   } 
+
+   .container__imagem {
+    width: 60vw;
+   }
+
+   .container__caixa {
+    margin: 2em 2em;
+   }
+
+   .secundario {
+    margin: 2em 2em;
+    text-align: center;
+   }
+
+   .descricao__titulo {
+    font-size: 2em;
+   }
+
+   .dispositivos__item {
+    font-size: 1.5em;
+   }
+
+   .secundario__imagem {
+    max-width: 60vw;
+   }
+
+   .dispositivos__lista {
+    display: block;
+   }
+
+   .rodape__lista {
+    display: block;
+   }
+
+   .lista__link {
+    margin: 0.5em;
+    text-decoration: underline;
+   }
+
+   .rodape__texto {
+    margin: 2em 2em;
+   }
 }
