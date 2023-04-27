@@ -197,6 +197,7 @@ body {
 
    .secundario__imagem {
     max-width: 60vw;
+    padding: 2em;
    }
 
    .dispositivos__lista {
